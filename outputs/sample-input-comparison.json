@@ -1,0 +1,320 @@
+{
+  "schema_version": "1.0",
+  "trace_id": "trace_88991a7e9e9c56ba",
+  "stage": "input_comparison",
+  "kind": "input-comparison",
+  "content_policy": "hashed_with_samples",
+  "created_at_utc": "2026-05-28T15:00:23.240340+00:00",
+  "payload_hash": "sha256:3aa8e9045556a1a5df97aa5c1de770dfae7630142bfe49fd3a42cae79d145ee2",
+  "payload_sha256": "3aa8e9045556a1a5df97aa5c1de770dfae7630142bfe49fd3a42cae79d145ee2",
+  "payload": {
+    "left": {
+      "rendered_input": "é",
+      "python_repr": "'é'",
+      "input_sha16": "4a99557e4033c353",
+      "nfc_sha16": "4a99557e4033c353",
+      "nfkc_sha16": "4a99557e4033c353",
+      "utf8_hex": "c3 a9",
+      "character_count": 1,
+      "byte_count": 2,
+      "code_points": [
+        {
+          "index": 0,
+          "rendered": "é",
+          "python_repr": "'é'",
+          "code_point": "U+00E9",
+          "unicode_name": "LATIN SMALL LETTER E WITH ACUTE",
+          "unicode_category": "Ll",
+          "utf8_hex": "c3 a9"
+        }
+      ],
+      "normalization": {
+        "NFC": {
+          "rendered": "é",
+          "python_repr": "'é'",
+          "sha16": "4a99557e4033c353",
+          "utf8_hex": "c3 a9",
+          "code_points": [
+            "U+00E9"
+          ],
+          "changed": false
+        },
+        "NFD": {
+          "rendered": "é",
+          "python_repr": "'é'",
+          "sha16": "bf12767b0f2a56b2",
+          "utf8_hex": "65 cc 81",
+          "code_points": [
+            "U+0065",
+            "U+0301"
+          ],
+          "changed": true
+        },
+        "NFKC": {
+          "rendered": "é",
+          "python_repr": "'é'",
+          "sha16": "4a99557e4033c353",
+          "utf8_hex": "c3 a9",
+          "code_points": [
+            "U+00E9"
+          ],
+          "changed": false
+        },
+        "NFKD": {
+          "rendered": "é",
+          "python_repr": "'é'",
+          "sha16": "bf12767b0f2a56b2",
+          "utf8_hex": "65 cc 81",
+          "code_points": [
+            "U+0065",
+            "U+0301"
+          ],
+          "changed": true
+        }
+      },
+      "tokenizer": {
+        "available": false,
+        "reason": "tiktoken is not installed"
+      }
+    },
+    "right": {
+      "rendered_input": "é",
+      "python_repr": "'é'",
+      "input_sha16": "bf12767b0f2a56b2",
+      "nfc_sha16": "4a99557e4033c353",
+      "nfkc_sha16": "4a99557e4033c353",
+      "utf8_hex": "65 cc 81",
+      "character_count": 2,
+      "byte_count": 3,
+      "code_points": [
+        {
+          "index": 0,
+          "rendered": "e",
+          "python_repr": "'e'",
+          "code_point": "U+0065",
+          "unicode_name": "LATIN SMALL LETTER E",
+          "unicode_category": "Ll",
+          "utf8_hex": "65"
+        },
+        {
+          "index": 1,
+          "rendered": "́",
+          "python_repr": "'́'",
+          "code_point": "U+0301",
+          "unicode_name": "COMBINING ACUTE ACCENT",
+          "unicode_category": "Mn",
+          "utf8_hex": "cc 81"
+        }
+      ],
+      "normalization": {
+        "NFC": {
+          "rendered": "é",
+          "python_repr": "'é'",
+          "sha16": "4a99557e4033c353",
+          "utf8_hex": "c3 a9",
+          "code_points": [
+            "U+00E9"
+          ],
+          "changed": true
+        },
+        "NFD": {
+          "rendered": "é",
+          "python_repr": "'é'",
+          "sha16": "bf12767b0f2a56b2",
+          "utf8_hex": "65 cc 81",
+          "code_points": [
+            "U+0065",
+            "U+0301"
+          ],
+          "changed": false
+        },
+        "NFKC": {
+          "rendered": "é",
+          "python_repr": "'é'",
+          "sha16": "4a99557e4033c353",
+          "utf8_hex": "c3 a9",
+          "code_points": [
+            "U+00E9"
+          ],
+          "changed": true
+        },
+        "NFKD": {
+          "rendered": "é",
+          "python_repr": "'é'",
+          "sha16": "bf12767b0f2a56b2",
+          "utf8_hex": "65 cc 81",
+          "code_points": [
+            "U+0065",
+            "U+0301"
+          ],
+          "changed": false
+        }
+      },
+      "tokenizer": {
+        "available": false,
+        "reason": "tiktoken is not installed"
+      }
+    },
+    "same_python_string": false,
+    "same_rendered": false,
+    "same_utf8_hex": false,
+    "same_input_hash": false,
+    "same_nfc_hash": true,
+    "same_nfkc_hash": true
+  },
+  "evidence": {
+    "left": {
+      "rendered_input": "é",
+      "python_repr": "'é'",
+      "input_sha16": "4a99557e4033c353",
+      "nfc_sha16": "4a99557e4033c353",
+      "nfkc_sha16": "4a99557e4033c353",
+      "utf8_hex": "c3 a9",
+      "character_count": 1,
+      "byte_count": 2,
+      "code_points": [
+        {
+          "index": 0,
+          "rendered": "é",
+          "python_repr": "'é'",
+          "code_point": "U+00E9",
+          "unicode_name": "LATIN SMALL LETTER E WITH ACUTE",
+          "unicode_category": "Ll",
+          "utf8_hex": "c3 a9"
+        }
+      ],
+      "normalization": {
+        "NFC": {
+          "rendered": "é",
+          "python_repr": "'é'",
+          "sha16": "4a99557e4033c353",
+          "utf8_hex": "c3 a9",
+          "code_points": [
+            "U+00E9"
+          ],
+          "changed": false
+        },
+        "NFD": {
+          "rendered": "é",
+          "python_repr": "'é'",
+          "sha16": "bf12767b0f2a56b2",
+          "utf8_hex": "65 cc 81",
+          "code_points": [
+            "U+0065",
+            "U+0301"
+          ],
+          "changed": true
+        },
+        "NFKC": {
+          "rendered": "é",
+          "python_repr": "'é'",
+          "sha16": "4a99557e4033c353",
+          "utf8_hex": "c3 a9",
+          "code_points": [
+            "U+00E9"
+          ],
+          "changed": false
+        },
+        "NFKD": {
+          "rendered": "é",
+          "python_repr": "'é'",
+          "sha16": "bf12767b0f2a56b2",
+          "utf8_hex": "65 cc 81",
+          "code_points": [
+            "U+0065",
+            "U+0301"
+          ],
+          "changed": true
+        }
+      },
+      "tokenizer": {
+        "available": false,
+        "reason": "tiktoken is not installed"
+      }
+    },
+    "right": {
+      "rendered_input": "é",
+      "python_repr": "'é'",
+      "input_sha16": "bf12767b0f2a56b2",
+      "nfc_sha16": "4a99557e4033c353",
+      "nfkc_sha16": "4a99557e4033c353",
+      "utf8_hex": "65 cc 81",
+      "character_count": 2,
+      "byte_count": 3,
+      "code_points": [
+        {
+          "index": 0,
+          "rendered": "e",
+          "python_repr": "'e'",
+          "code_point": "U+0065",
+          "unicode_name": "LATIN SMALL LETTER E",
+          "unicode_category": "Ll",
+          "utf8_hex": "65"
+        },
+        {
+          "index": 1,
+          "rendered": "́",
+          "python_repr": "'́'",
+          "code_point": "U+0301",
+          "unicode_name": "COMBINING ACUTE ACCENT",
+          "unicode_category": "Mn",
+          "utf8_hex": "cc 81"
+        }
+      ],
+      "normalization": {
+        "NFC": {
+          "rendered": "é",
+          "python_repr": "'é'",
+          "sha16": "4a99557e4033c353",
+          "utf8_hex": "c3 a9",
+          "code_points": [
+            "U+00E9"
+          ],
+          "changed": true
+        },
+        "NFD": {
+          "rendered": "é",
+          "python_repr": "'é'",
+          "sha16": "bf12767b0f2a56b2",
+          "utf8_hex": "65 cc 81",
+          "code_points": [
+            "U+0065",
+            "U+0301"
+          ],
+          "changed": false
+        },
+        "NFKC": {
+          "rendered": "é",
+          "python_repr": "'é'",
+          "sha16": "4a99557e4033c353",
+          "utf8_hex": "c3 a9",
+          "code_points": [
+            "U+00E9"
+          ],
+          "changed": true
+        },
+        "NFKD": {
+          "rendered": "é",
+          "python_repr": "'é'",
+          "sha16": "bf12767b0f2a56b2",
+          "utf8_hex": "65 cc 81",
+          "code_points": [
+            "U+0065",
+            "U+0301"
+          ],
+          "changed": false
+        }
+      },
+      "tokenizer": {
+        "available": false,
+        "reason": "tiktoken is not installed"
+      }
+    },
+    "same_python_string": false,
+    "same_rendered": false,
+    "same_utf8_hex": false,
+    "same_input_hash": false,
+    "same_nfc_hash": true,
+    "same_nfkc_hash": true
+  }
+}

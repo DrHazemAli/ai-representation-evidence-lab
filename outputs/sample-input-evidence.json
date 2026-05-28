@@ -1,0 +1,170 @@
+{
+  "schema_version": "1.0",
+  "trace_id": "trace_aa99ac28eddf0c72",
+  "stage": "input_representation",
+  "kind": "input-representation",
+  "content_policy": "hashed_with_samples",
+  "created_at_utc": "2026-05-28T15:00:23.239933+00:00",
+  "payload_hash": "sha256:f2c795d6a4042fe97c076fdb0d111e21a957b7a587f1294973918f6af5e22ef5",
+  "payload_sha256": "f2c795d6a4042fe97c076fdb0d111e21a957b7a587f1294973918f6af5e22ef5",
+  "payload": {
+    "rendered_input": "H​",
+    "python_repr": "'H\\u200b'",
+    "input_sha16": "96c196c2f30fa80a",
+    "nfc_sha16": "96c196c2f30fa80a",
+    "nfkc_sha16": "96c196c2f30fa80a",
+    "utf8_hex": "48 e2 80 8b",
+    "character_count": 2,
+    "byte_count": 4,
+    "code_points": [
+      {
+        "index": 0,
+        "rendered": "H",
+        "python_repr": "'H'",
+        "code_point": "U+0048",
+        "unicode_name": "LATIN CAPITAL LETTER H",
+        "unicode_category": "Lu",
+        "utf8_hex": "48"
+      },
+      {
+        "index": 1,
+        "rendered": "​",
+        "python_repr": "'\\u200b'",
+        "code_point": "U+200B",
+        "unicode_name": "ZERO WIDTH SPACE",
+        "unicode_category": "Cf",
+        "utf8_hex": "e2 80 8b"
+      }
+    ],
+    "normalization": {
+      "NFC": {
+        "rendered": "H​",
+        "python_repr": "'H\\u200b'",
+        "sha16": "96c196c2f30fa80a",
+        "utf8_hex": "48 e2 80 8b",
+        "code_points": [
+          "U+0048",
+          "U+200B"
+        ],
+        "changed": false
+      },
+      "NFD": {
+        "rendered": "H​",
+        "python_repr": "'H\\u200b'",
+        "sha16": "96c196c2f30fa80a",
+        "utf8_hex": "48 e2 80 8b",
+        "code_points": [
+          "U+0048",
+          "U+200B"
+        ],
+        "changed": false
+      },
+      "NFKC": {
+        "rendered": "H​",
+        "python_repr": "'H\\u200b'",
+        "sha16": "96c196c2f30fa80a",
+        "utf8_hex": "48 e2 80 8b",
+        "code_points": [
+          "U+0048",
+          "U+200B"
+        ],
+        "changed": false
+      },
+      "NFKD": {
+        "rendered": "H​",
+        "python_repr": "'H\\u200b'",
+        "sha16": "96c196c2f30fa80a",
+        "utf8_hex": "48 e2 80 8b",
+        "code_points": [
+          "U+0048",
+          "U+200B"
+        ],
+        "changed": false
+      }
+    },
+    "tokenizer": {
+      "available": false,
+      "reason": "tiktoken is not installed"
+    }
+  },
+  "evidence": {
+    "rendered_input": "H​",
+    "python_repr": "'H\\u200b'",
+    "input_sha16": "96c196c2f30fa80a",
+    "nfc_sha16": "96c196c2f30fa80a",
+    "nfkc_sha16": "96c196c2f30fa80a",
+    "utf8_hex": "48 e2 80 8b",
+    "character_count": 2,
+    "byte_count": 4,
+    "code_points": [
+      {
+        "index": 0,
+        "rendered": "H",
+        "python_repr": "'H'",
+        "code_point": "U+0048",
+        "unicode_name": "LATIN CAPITAL LETTER H",
+        "unicode_category": "Lu",
+        "utf8_hex": "48"
+      },
+      {
+        "index": 1,
+        "rendered": "​",
+        "python_repr": "'\\u200b'",
+        "code_point": "U+200B",
+        "unicode_name": "ZERO WIDTH SPACE",
+        "unicode_category": "Cf",
+        "utf8_hex": "e2 80 8b"
+      }
+    ],
+    "normalization": {
+      "NFC": {
+        "rendered": "H​",
+        "python_repr": "'H\\u200b'",
+        "sha16": "96c196c2f30fa80a",
+        "utf8_hex": "48 e2 80 8b",
+        "code_points": [
+          "U+0048",
+          "U+200B"
+        ],
+        "changed": false
+      },
+      "NFD": {
+        "rendered": "H​",
+        "python_repr": "'H\\u200b'",
+        "sha16": "96c196c2f30fa80a",
+        "utf8_hex": "48 e2 80 8b",
+        "code_points": [
+          "U+0048",
+          "U+200B"
+        ],
+        "changed": false
+      },
+      "NFKC": {
+        "rendered": "H​",
+        "python_repr": "'H\\u200b'",
+        "sha16": "96c196c2f30fa80a",
+        "utf8_hex": "48 e2 80 8b",
+        "code_points": [
+          "U+0048",
+          "U+200B"
+        ],
+        "changed": false
+      },
+      "NFKD": {
+        "rendered": "H​",
+        "python_repr": "'H\\u200b'",
+        "sha16": "96c196c2f30fa80a",
+        "utf8_hex": "48 e2 80 8b",
+        "code_points": [
+          "U+0048",
+          "U+200B"
+        ],
+        "changed": false
+      }
+    },
+    "tokenizer": {
+      "available": false,
+      "reason": "tiktoken is not installed"
+    }
+  }
+}

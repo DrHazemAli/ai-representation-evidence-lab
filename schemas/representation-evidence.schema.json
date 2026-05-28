@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/representation-evidence.schema.json",
+  "title": "Representation Evidence Envelope",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "trace_id",
+    "stage",
+    "content_policy",
+    "payload_hash",
+    "payload_sha256",
+    "evidence"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "trace_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "stage": {
+      "type": "string",
+      "enum": [
+        "input_representation",
+        "input_comparison",
+        "tokenizer_contract_matrix",
+        "context_promotion",
+        "decoding_trajectory",
+        "decoding_demo"
+      ]
+    },
+    "kind": {
+      "type": "string"
+    },
+    "content_policy": {
+      "type": "string",
+      "enum": [
+        "hashed",
+        "hashed_with_samples",
+        "redacted",
+        "plaintext_demo"
+      ]
+    },
+    "created_at_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "payload_hash": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "payload_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "payload": {
+      "type": "object"
+    },
+    "evidence": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

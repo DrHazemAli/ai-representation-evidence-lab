@@ -1,0 +1,11 @@
+name: default_context_promotion
+version: 1
+required:
+  tenant_match: true
+  trusted_source: true
+  fresh: true
+  deleted: false
+  intended_use: answer_grounding
+  allowed_authorities:
+    - approved_policy
+max_tokens: 2048

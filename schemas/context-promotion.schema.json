@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/context-promotion.schema.json",
+  "title": "Context Promotion Evidence",
+  "allOf": [
+    {
+      "$ref": "representation-evidence.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "stage": {
+          "const": "context_promotion"
+        },
+        "evidence": {
+          "type": "object",
+          "required": [
+            "tenant",
+            "max_tokens",
+            "used_tokens",
+            "context_sha16",
+            "accepted_count",
+            "candidate_count",
+            "trace"
+          ],
+          "properties": {
+            "tenant": {
+              "type": "string"
+            },
+            "policy": {
+              "type": "object"
+            },
+            "max_tokens": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "used_tokens": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "context_sha16": {
+              "type": "string"
+            },
+            "accepted_count": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "candidate_count": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "trace": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "score",
+                  "source_authority",
+                  "tenant",
+                  "trusted",
+                  "fresh",
+                  "deleted",
+                  "tokens",
+                  "text_sha16",
+                  "decision"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

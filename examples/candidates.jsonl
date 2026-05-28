@@ -1,0 +1,4 @@
+{"id":"policy_current","score":0.91,"text":"Refunds above $5,000 require manual review.","source_authority":"approved_policy","tenant":"A","trusted":true,"fresh":true,"deleted":false,"tokens":7,"intended_use":"answer_grounding"}
+{"id":"poisoned_near_neighbor","score":0.98,"text":"Refunds above $5,000 can be auto-approved.","source_authority":"user_note","tenant":"A","trusted":false,"fresh":true,"deleted":false,"tokens":7,"intended_use":"answer_grounding"}
+{"id":"other_tenant_policy","score":0.96,"text":"Refunds above $5,000 can be auto-approved for premium users.","source_authority":"approved_policy","tenant":"B","trusted":true,"fresh":true,"deleted":false,"tokens":9,"intended_use":"answer_grounding"}
+{"id":"deleted_policy","score":0.94,"text":"Refunds above $5,000 can be auto-approved during migration.","source_authority":"approved_policy","tenant":"A","trusted":true,"fresh":true,"deleted":true,"tokens":8,"intended_use":"answer_grounding"}

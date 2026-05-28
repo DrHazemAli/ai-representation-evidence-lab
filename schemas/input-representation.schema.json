@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/input-representation.schema.json",
+  "title": "Input Representation Evidence",
+  "allOf": [
+    {
+      "$ref": "representation-evidence.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "stage": {
+          "const": "input_representation"
+        },
+        "evidence": {
+          "type": "object",
+          "required": [
+            "input_sha16",
+            "utf8_hex",
+            "code_points",
+            "normalization",
+            "tokenizer"
+          ],
+          "properties": {
+            "input_sha16": {
+              "type": "string"
+            },
+            "utf8_hex": {
+              "type": "string"
+            },
+            "character_count": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "byte_count": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "code_points": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "index",
+                  "code_point",
+                  "unicode_name",
+                  "unicode_category",
+                  "utf8_hex"
+                ]
+              }
+            },
+            "normalization": {
+              "type": "object",
+              "required": [
+                "NFC",
+                "NFD",
+                "NFKC",
+                "NFKD"
+              ]
+            },
+            "tokenizer": {
+              "type": "object"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

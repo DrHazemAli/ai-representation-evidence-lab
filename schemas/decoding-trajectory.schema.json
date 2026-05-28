@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/decoding-trajectory.schema.json",
+  "title": "Decoding Trajectory Evidence",
+  "allOf": [
+    {
+      "$ref": "representation-evidence.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "stage": {
+          "const": "decoding_trajectory"
+        },
+        "evidence": {
+          "type": "object",
+          "required": [
+            "policy",
+            "temperature",
+            "output",
+            "output_sha16",
+            "steps"
+          ],
+          "properties": {
+            "policy": {
+              "type": "string"
+            },
+            "temperature": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "top_p": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "seed": {
+              "type": [
+                "integer",
+                "null"
+              ]
+            },
+            "stop": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "output": {
+              "type": "string"
+            },
+            "output_sha16": {
+              "type": "string"
+            },
+            "steps": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "step",
+                  "policy",
+                  "selected_token",
+                  "probabilities"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

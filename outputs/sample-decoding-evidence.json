@@ -1,0 +1,482 @@
+{
+  "schema_version": "1.0",
+  "trace_id": "trace_b9516bf5c7f7b9de",
+  "stage": "decoding_demo",
+  "kind": "decoding-demo",
+  "content_policy": "hashed_with_samples",
+  "created_at_utc": "2026-05-28T15:00:23.256266+00:00",
+  "payload_hash": "sha256:8718da09bcc5ed4867b1345d739d459df91ed89dec0eecf9a1c934c73e1defe1",
+  "payload_sha256": "8718da09bcc5ed4867b1345d739d459df91ed89dec0eecf9a1c934c73e1defe1",
+  "payload": {
+    "description": "Same logits, different decoding contracts.",
+    "runs": [
+      {
+        "trace_id": "trace_38788a23ac69a307",
+        "stage": "decoding_trajectory",
+        "payload_hash": "sha256:411d64ec7c50e5ea5033088105a16b9e5366504740a8f49cb9eb59d14659baf4",
+        "evidence": {
+          "policy": "greedy",
+          "temperature": 1.0,
+          "top_p": null,
+          "seed": null,
+          "stop": [],
+          "output": "APPROVE ALL REFUNDS .",
+          "output_sha16": "2a09c309ac583fa1",
+          "steps": [
+            {
+              "step": 0,
+              "policy": "greedy",
+              "temperature": 1.0,
+              "top_p": null,
+              "selected_token": "APPROVE",
+              "probabilities": {
+                "APPROVE": 0.459905531292958,
+                "REVIEW": 0.4374756738564955,
+                "DENY": 0.10261879485054642
+              }
+            },
+            {
+              "step": 1,
+              "policy": "greedy",
+              "temperature": 1.0,
+              "top_p": null,
+              "selected_token": "ALL",
+              "probabilities": {
+                "ALL": 0.4830599786966829,
+                "REFUNDS": 0.43709074388041214,
+                ".": 0.07984927742290494
+              }
+            },
+            {
+              "step": 2,
+              "policy": "greedy",
+              "temperature": 1.0,
+              "top_p": null,
+              "selected_token": "REFUNDS",
+              "probabilities": {
+                "REFUNDS": 0.524184600659049,
+                ".": 0.3179340316489363,
+                "</s>": 0.15788136769201466
+              }
+            },
+            {
+              "step": 3,
+              "policy": "greedy",
+              "temperature": 1.0,
+              "top_p": null,
+              "selected_token": ".",
+              "probabilities": {
+                ".": 0.549833997312478,
+                "</s>": 0.45016600268752205
+              }
+            }
+          ]
+        }
+      },
+      {
+        "trace_id": "trace_24ca05d6796711ff",
+        "stage": "decoding_trajectory",
+        "payload_hash": "sha256:fe8d7c581821645d789b4d95ce9f63068db2210e0d00890616119fbdfade936e",
+        "evidence": {
+          "policy": "top_p",
+          "temperature": 1.0,
+          "top_p": 0.8,
+          "seed": 7,
+          "stop": [],
+          "output": "APPROVE ALL REFUNDS",
+          "output_sha16": "eb55be803b34e72f",
+          "steps": [
+            {
+              "step": 0,
+              "policy": "top_p",
+              "temperature": 1.0,
+              "top_p": 0.8,
+              "selected_token": "APPROVE",
+              "probabilities": {
+                "APPROVE": 0.459905531292958,
+                "REVIEW": 0.4374756738564955,
+                "DENY": 0.10261879485054642
+              }
+            },
+            {
+              "step": 1,
+              "policy": "top_p",
+              "temperature": 1.0,
+              "top_p": 0.8,
+              "selected_token": "ALL",
+              "probabilities": {
+                "ALL": 0.4830599786966829,
+                "REFUNDS": 0.43709074388041214,
+                ".": 0.07984927742290494
+              }
+            },
+            {
+              "step": 2,
+              "policy": "top_p",
+              "temperature": 1.0,
+              "top_p": 0.8,
+              "selected_token": "REFUNDS",
+              "probabilities": {
+                "REFUNDS": 0.524184600659049,
+                ".": 0.3179340316489363,
+                "</s>": 0.15788136769201466
+              }
+            },
+            {
+              "step": 3,
+              "policy": "top_p",
+              "temperature": 1.0,
+              "top_p": 0.8,
+              "selected_token": "</s>",
+              "probabilities": {
+                ".": 0.549833997312478,
+                "</s>": 0.45016600268752205
+              }
+            }
+          ]
+        }
+      },
+      {
+        "trace_id": "trace_a86a5d2e5a866f0f",
+        "stage": "decoding_trajectory",
+        "payload_hash": "sha256:3f449a25f54fac87909631cb3fa81fc43789160a500df49c868ba844c5f954d6",
+        "evidence": {
+          "policy": "top_p",
+          "temperature": 1.6,
+          "top_p": 0.8,
+          "seed": 7,
+          "stop": [],
+          "output": "APPROVE ALL .",
+          "output_sha16": "c953d6a46cb0f85e",
+          "steps": [
+            {
+              "step": 0,
+              "policy": "top_p",
+              "temperature": 1.6,
+              "top_p": 0.8,
+              "selected_token": "APPROVE",
+              "probabilities": {
+                "APPROVE": 0.4235782528213526,
+                "REVIEW": 0.4105461200358781,
+                "DENY": 0.16587562714276938
+              }
+            },
+            {
+              "step": 1,
+              "policy": "top_p",
+              "temperature": 1.6,
+              "top_p": 0.8,
+              "selected_token": "ALL",
+              "probabilities": {
+                "ALL": 0.4416833288054642,
+                "REFUNDS": 0.4149230887067926,
+                ".": 0.14339358248774323
+              }
+            },
+            {
+              "step": 2,
+              "policy": "top_p",
+              "temperature": 1.6,
+              "top_p": 0.8,
+              "selected_token": ".",
+              "probabilities": {
+                "REFUNDS": 0.45372417631537726,
+                ".": 0.33195169862327173,
+                "</s>": 0.21432412506135112
+              }
+            },
+            {
+              "step": 3,
+              "policy": "top_p",
+              "temperature": 1.6,
+              "top_p": 0.8,
+              "selected_token": "</s>",
+              "probabilities": {
+                ".": 0.5312093733737563,
+                "</s>": 0.4687906266262437
+              }
+            }
+          ]
+        }
+      },
+      {
+        "trace_id": "trace_50f8e7f6f3330ccd",
+        "stage": "decoding_trajectory",
+        "payload_hash": "sha256:8f1d931b222f6d0118f4f4ef4c968eecc40ec90c31a6c873228f169340b3f26a",
+        "evidence": {
+          "policy": "greedy",
+          "temperature": 1.0,
+          "top_p": null,
+          "seed": null,
+          "stop": [
+            "ALL"
+          ],
+          "output": "APPROVE",
+          "output_sha16": "cc2c8cf33925246e",
+          "steps": [
+            {
+              "step": 0,
+              "policy": "greedy",
+              "temperature": 1.0,
+              "top_p": null,
+              "selected_token": "APPROVE",
+              "probabilities": {
+                "APPROVE": 0.459905531292958,
+                "REVIEW": 0.4374756738564955,
+                "DENY": 0.10261879485054642
+              }
+            },
+            {
+              "step": 1,
+              "policy": "greedy",
+              "temperature": 1.0,
+              "top_p": null,
+              "selected_token": "ALL",
+              "probabilities": {
+                "ALL": 0.4830599786966829,
+                "REFUNDS": 0.43709074388041214,
+                ".": 0.07984927742290494
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "evidence": {
+    "description": "Same logits, different decoding contracts.",
+    "runs": [
+      {
+        "trace_id": "trace_38788a23ac69a307",
+        "stage": "decoding_trajectory",
+        "payload_hash": "sha256:411d64ec7c50e5ea5033088105a16b9e5366504740a8f49cb9eb59d14659baf4",
+        "evidence": {
+          "policy": "greedy",
+          "temperature": 1.0,
+          "top_p": null,
+          "seed": null,
+          "stop": [],
+          "output": "APPROVE ALL REFUNDS .",
+          "output_sha16": "2a09c309ac583fa1",
+          "steps": [
+            {
+              "step": 0,
+              "policy": "greedy",
+              "temperature": 1.0,
+              "top_p": null,
+              "selected_token": "APPROVE",
+              "probabilities": {
+                "APPROVE": 0.459905531292958,
+                "REVIEW": 0.4374756738564955,
+                "DENY": 0.10261879485054642
+              }
+            },
+            {
+              "step": 1,
+              "policy": "greedy",
+              "temperature": 1.0,
+              "top_p": null,
+              "selected_token": "ALL",
+              "probabilities": {
+                "ALL": 0.4830599786966829,
+                "REFUNDS": 0.43709074388041214,
+                ".": 0.07984927742290494
+              }
+            },
+            {
+              "step": 2,
+              "policy": "greedy",
+              "temperature": 1.0,
+              "top_p": null,
+              "selected_token": "REFUNDS",
+              "probabilities": {
+                "REFUNDS": 0.524184600659049,
+                ".": 0.3179340316489363,
+                "</s>": 0.15788136769201466
+              }
+            },
+            {
+              "step": 3,
+              "policy": "greedy",
+              "temperature": 1.0,
+              "top_p": null,
+              "selected_token": ".",
+              "probabilities": {
+                ".": 0.549833997312478,
+                "</s>": 0.45016600268752205
+              }
+            }
+          ]
+        }
+      },
+      {
+        "trace_id": "trace_24ca05d6796711ff",
+        "stage": "decoding_trajectory",
+        "payload_hash": "sha256:fe8d7c581821645d789b4d95ce9f63068db2210e0d00890616119fbdfade936e",
+        "evidence": {
+          "policy": "top_p",
+          "temperature": 1.0,
+          "top_p": 0.8,
+          "seed": 7,
+          "stop": [],
+          "output": "APPROVE ALL REFUNDS",
+          "output_sha16": "eb55be803b34e72f",
+          "steps": [
+            {
+              "step": 0,
+              "policy": "top_p",
+              "temperature": 1.0,
+              "top_p": 0.8,
+              "selected_token": "APPROVE",
+              "probabilities": {
+                "APPROVE": 0.459905531292958,
+                "REVIEW": 0.4374756738564955,
+                "DENY": 0.10261879485054642
+              }
+            },
+            {
+              "step": 1,
+              "policy": "top_p",
+              "temperature": 1.0,
+              "top_p": 0.8,
+              "selected_token": "ALL",
+              "probabilities": {
+                "ALL": 0.4830599786966829,
+                "REFUNDS": 0.43709074388041214,
+                ".": 0.07984927742290494
+              }
+            },
+            {
+              "step": 2,
+              "policy": "top_p",
+              "temperature": 1.0,
+              "top_p": 0.8,
+              "selected_token": "REFUNDS",
+              "probabilities": {
+                "REFUNDS": 0.524184600659049,
+                ".": 0.3179340316489363,
+                "</s>": 0.15788136769201466
+              }
+            },
+            {
+              "step": 3,
+              "policy": "top_p",
+              "temperature": 1.0,
+              "top_p": 0.8,
+              "selected_token": "</s>",
+              "probabilities": {
+                ".": 0.549833997312478,
+                "</s>": 0.45016600268752205
+              }
+            }
+          ]
+        }
+      },
+      {
+        "trace_id": "trace_a86a5d2e5a866f0f",
+        "stage": "decoding_trajectory",
+        "payload_hash": "sha256:3f449a25f54fac87909631cb3fa81fc43789160a500df49c868ba844c5f954d6",
+        "evidence": {
+          "policy": "top_p",
+          "temperature": 1.6,
+          "top_p": 0.8,
+          "seed": 7,
+          "stop": [],
+          "output": "APPROVE ALL .",
+          "output_sha16": "c953d6a46cb0f85e",
+          "steps": [
+            {
+              "step": 0,
+              "policy": "top_p",
+              "temperature": 1.6,
+              "top_p": 0.8,
+              "selected_token": "APPROVE",
+              "probabilities": {
+                "APPROVE": 0.4235782528213526,
+                "REVIEW": 0.4105461200358781,
+                "DENY": 0.16587562714276938
+              }
+            },
+            {
+              "step": 1,
+              "policy": "top_p",
+              "temperature": 1.6,
+              "top_p": 0.8,
+              "selected_token": "ALL",
+              "probabilities": {
+                "ALL": 0.4416833288054642,
+                "REFUNDS": 0.4149230887067926,
+                ".": 0.14339358248774323
+              }
+            },
+            {
+              "step": 2,
+              "policy": "top_p",
+              "temperature": 1.6,
+              "top_p": 0.8,
+              "selected_token": ".",
+              "probabilities": {
+                "REFUNDS": 0.45372417631537726,
+                ".": 0.33195169862327173,
+                "</s>": 0.21432412506135112
+              }
+            },
+            {
+              "step": 3,
+              "policy": "top_p",
+              "temperature": 1.6,
+              "top_p": 0.8,
+              "selected_token": "</s>",
+              "probabilities": {
+                ".": 0.5312093733737563,
+                "</s>": 0.4687906266262437
+              }
+            }
+          ]
+        }
+      },
+      {
+        "trace_id": "trace_50f8e7f6f3330ccd",
+        "stage": "decoding_trajectory",
+        "payload_hash": "sha256:8f1d931b222f6d0118f4f4ef4c968eecc40ec90c31a6c873228f169340b3f26a",
+        "evidence": {
+          "policy": "greedy",
+          "temperature": 1.0,
+          "top_p": null,
+          "seed": null,
+          "stop": [
+            "ALL"
+          ],
+          "output": "APPROVE",
+          "output_sha16": "cc2c8cf33925246e",
+          "steps": [
+            {
+              "step": 0,
+              "policy": "greedy",
+              "temperature": 1.0,
+              "top_p": null,
+              "selected_token": "APPROVE",
+              "probabilities": {
+                "APPROVE": 0.459905531292958,
+                "REVIEW": 0.4374756738564955,
+                "DENY": 0.10261879485054642
+              }
+            },
+            {
+              "step": 1,
+              "policy": "greedy",
+              "temperature": 1.0,
+              "top_p": null,
+              "selected_token": "ALL",
+              "probabilities": {
+                "ALL": 0.4830599786966829,
+                "REFUNDS": 0.43709074388041214,
+                ".": 0.07984927742290494
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

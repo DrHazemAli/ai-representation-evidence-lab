@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "trace_id": "trace_c432bacdf8924ffa",
+  "stage": "tokenizer_contract_matrix",
+  "kind": "tokenizer-contract-matrix",
+  "content_policy": "hashed_with_samples",
+  "created_at_utc": "2026-05-28T15:00:23.255842+00:00",
+  "payload_hash": "sha256:448e036911972b0da2bc8b2fd31a42b828e20d10adbf5c30b064509ab2155f89",
+  "payload_sha256": "448e036911972b0da2bc8b2fd31a42b828e20d10adbf5c30b064509ab2155f89",
+  "payload": {
+    "input_summary": {
+      "input_sha16": "ab8a4f6bb84d161b",
+      "utf8_hex": "50 61 79 50 61 6c",
+      "character_count": 6,
+      "byte_count": 6,
+      "code_points": [
+        "U+0050",
+        "U+0061",
+        "U+0079",
+        "U+0050",
+        "U+0061",
+        "U+006C"
+      ],
+      "has_uppercase": true,
+      "has_non_ascii": false,
+      "has_format_characters": false
+    },
+    "rendered_input_sample": "PayPal",
+    "tokenizers": [
+      {
+        "name": "cl100k",
+        "provider": "tiktoken",
+        "available": false,
+        "reason": "tiktoken is not installed"
+      },
+      {
+        "name": "gpt2",
+        "provider": "tiktoken",
+        "available": false,
+        "reason": "tiktoken is not installed"
+      },
+      {
+        "name": "bert-base-uncased",
+        "provider": "huggingface",
+        "available": false,
+        "reason": "transformers is not installed"
+      }
+    ]
+  },
+  "evidence": {
+    "input_summary": {
+      "input_sha16": "ab8a4f6bb84d161b",
+      "utf8_hex": "50 61 79 50 61 6c",
+      "character_count": 6,
+      "byte_count": 6,
+      "code_points": [
+        "U+0050",
+        "U+0061",
+        "U+0079",
+        "U+0050",
+        "U+0061",
+        "U+006C"
+      ],
+      "has_uppercase": true,
+      "has_non_ascii": false,
+      "has_format_characters": false
+    },
+    "rendered_input_sample": "PayPal",
+    "tokenizers": [
+      {
+        "name": "cl100k",
+        "provider": "tiktoken",
+        "available": false,
+        "reason": "tiktoken is not installed"
+      },
+      {
+        "name": "gpt2",
+        "provider": "tiktoken",
+        "available": false,
+        "reason": "tiktoken is not installed"
+      },
+      {
+        "name": "bert-base-uncased",
+        "provider": "huggingface",
+        "available": false,
+        "reason": "transformers is not installed"
+      }
+    ]
+  }
+}
